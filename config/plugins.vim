@@ -55,6 +55,8 @@ Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 " Undo tree
 Plug 'simnalamburt/vim-mundo'
+" Automatically closes certain structures
+Plug 'tpope/vim-endwise'
 
 """"""""""
 """ Search
@@ -64,6 +66,14 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-abolish'
 " Better search
 Plug 'mileszs/ack.vim'
+
+""""""""""""""""
+""" Text Objects
+""""""""""""""""
+" Allows you to create custom text objects
+Plug 'kana/vim-textobj-user'
+" Helps select ruby blocks
+Plug 'nelstrom/vim-textobj-rubyblock'
 
 """""""""""""""
 """ Integration
@@ -103,3 +113,7 @@ Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 
 " Protobuf
 Plug 'uarun/vim-protobuf', { 'for': 'proto' }
+
+" Ruby
+Plug 'tpope/vim-bundler', { 'for': ['ruby', 'rake'] }
+Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'] }
