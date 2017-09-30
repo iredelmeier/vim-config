@@ -37,8 +37,6 @@ Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 " Shows and removes extra whitespace
 Plug 'ntpeters/vim-better-whitespace'
-" Autodetects appropriate indentation
-Plug 'tpope/vim-sleuth'
 " Pairs of mappings
 Plug 'tpope/vim-unimpaired'
 " Multiple cursors
