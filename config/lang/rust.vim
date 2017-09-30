@@ -7,7 +7,9 @@ let g:rust_fold=1
 let g:deoplete#sources#rust#racer_binary=g:racer_cmd
 let g:deoplete#sources#rust#rust_source_path=substitute(system('rustc --print sysroot'), '\n\+$', '', '') . '/lib/rustlib/src/rust/src'
 
-autocmd FileType rust let b:dispatch = 'cargo test --all --no-fail-fast -- --nocapture'
+let test#rust#cargotest#options = "--all --no-fail-fast"
+
+let g:ale_rust_cargo_use_check=1
 
 " tags
 let g:tagbar_type_rust = {
