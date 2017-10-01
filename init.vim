@@ -9,4 +9,6 @@ runtime! config/bindings.vim
 runtime! config/plugins/*.vim
 runtime! config/lang/*.vim
 
-source ${HOME}/.vimrc.local
+if filereadable(expand("$HOME/.vimrc.local"))
+  source ${HOME}/.vimrc.local
+endif
