@@ -3,9 +3,9 @@ let g:maplocalleader="-"
 
 " vim-test
 " Run tests, etc.
-nnoremap <F2> :TestFile<CR>
-nnoremap <F3> :TestSuite<CR>
-nnoremap <F4> :TestNearest<CR>
+nnoremap <F2> :TestNearest<CR>
+nnoremap <F3> :TestFile<CR>
+nnoremap <F4> :TestSuite<CR>
 nnoremap <F5> :TestLast<CR>
 
 " mundo
