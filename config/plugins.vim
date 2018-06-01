@@ -57,6 +57,8 @@ Plug 'ervandew/supertab'
 Plug 'simnalamburt/vim-mundo'
 " Automatically closes certain structures
 Plug 'tpope/vim-endwise'
+" Auto-align table text
+Plug 'godlygeek/tabular'
 
 """"""""""
 """ Search
