@@ -11,7 +11,8 @@ set termencoding=utf-8
 set ruler
 set number " line numbers
 set numberwidth=4
-set nowrap " don't wrap long lines
+set wrap " wrap long lines
+set linebreak " wrap at the end of words, not in the middle
 set scrolloff=2 " keep some context visible
 set iskeyword+=$,@ " characters that can be part of variable names
 set tildeop " Enables ~<motion> to toggle case
