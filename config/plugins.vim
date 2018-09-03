@@ -57,6 +57,11 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-endwise'
 " Auto-align table text
 Plug 'godlygeek/tabular'
+" Language server awesomeness
+Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
 
 """"""""""
 """ Search

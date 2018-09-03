@@ -33,6 +33,12 @@ if executable('rls')
   endif
 
   let g:ale_linters.rust = ['rls']
+
+  if !exists('g:LanguageClient_serverCommands')
+    let g:LanguageClient_serverCommands = {}
+  endif
+
+  let g:LanguageClient_serverCommands.rust = ['rls']
 endif
 
 if !exists('g:test#runner_commands')
