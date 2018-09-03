@@ -51,8 +51,6 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'terryma/vim-expand-region'
 " Tags
 Plug 'majutsushi/tagbar'
-" Autocompletion via tab
-Plug 'ervandew/supertab'
 " Undo tree
 Plug 'simnalamburt/vim-mundo'
 " Automatically closes certain structures
