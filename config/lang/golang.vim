@@ -22,9 +22,12 @@ let test#go#gotest#options = '-race'
 
 if executable("ginkgo")
   let test#go#runner = 'ginkgo'
-  " let g:go_test_cmd = 'ginkgo -race -r -p --randomizeAllSpecs --randomizeSuites %:h'
-else
-  " let g:go_test_cmd = 'go test -race %'
+
+  if !exists('g:test#runner_commands')
+    let g:test#runner_commands = []
+  endif
+
+  let g:test#runner_commands += ['Ginkgo']
 endif
 
 if !exists('g:ale_linters')

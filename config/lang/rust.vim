@@ -34,3 +34,9 @@ if executable('rls')
 
   let g:ale_linters.rust = ['rls']
 endif
+
+if !exists('g:test#runner_commands')
+  let g:test#runner_commands = []
+endif
+
+let g:test#runner_commands += ['CargoTest']
