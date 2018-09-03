@@ -8,17 +8,17 @@ nnoremap <F3> :TestFile<CR>
 nnoremap <F4> :TestSuite<CR>
 nnoremap <F5> :TestLast<CR>
 
+" Toggle auto-indent on paste
+set pastetoggle=<F6>
+noremap <F6> :set invpaste<CR>:set paste?<CR>
+
 " mundo
 " Toggle undo history
-nnoremap <F6> :MundoToggle<CR>
-
-" Toggle auto-indent on paste
-set pastetoggle=<F7>
-map <F7> :set invpaste<CR>:set paste?<CR>
+nnoremap <F7> :MundoToggle<CR>
 
 " tagbar
 " Toggle tag window
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 " nerdtree
 " toggle project structure
