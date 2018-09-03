@@ -65,7 +65,7 @@ set whichwrap+=<,>,[,] " arrow keys can jump lines
 
 " History
 set history=1000
-set undolevels=1000
+set undolevels=100
 if has('persistent_undo')
   set undofile
   set undodir=/tmp/vim-undo
