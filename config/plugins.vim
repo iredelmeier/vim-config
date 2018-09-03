@@ -49,7 +49,7 @@ Plug 'Shougo/echodoc.vim'
 Plug 'bkad/CamelCaseMotion'
 " +/- to expand or shrink region
 Plug 'terryma/vim-expand-region'
-" Tags
+" View tags
 Plug 'majutsushi/tagbar'
 " Undo tree
 Plug 'simnalamburt/vim-mundo'
