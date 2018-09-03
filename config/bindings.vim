@@ -26,8 +26,8 @@ nnoremap \ :NERDTreeToggle<CR>
 nnoremap \| :NERDTreeFind<CR>
 
 " deoplete
-inoremap <silent><expr> <Tab>
-    \ pumvisible() ? "\<C-n>" : deoplete#manual_complete()
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
 " fugitive
 nnoremap <leader>gs :Gstatus<cr>
