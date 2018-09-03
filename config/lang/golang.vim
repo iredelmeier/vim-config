@@ -1,4 +1,3 @@
-" vim-go setup
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = 'goimports'
 let g:go_fmt_fail_silently = 1
@@ -28,4 +27,8 @@ else
   " let g:go_test_cmd = 'go test -race %'
 endif
 
-" autocmd FileType go let b:dispatch = g:go_test_cmd
+if !exists('g:ale_linters')
+  let g:ale_linters = {}
+endif
+
+let g:ale_linters.go = ['go build', 'gofmt', 'gometalinter']

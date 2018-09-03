@@ -10,6 +10,7 @@ let g:deoplete#sources#rust#rust_source_path=substitute(system('rustc --print sy
 let test#rust#cargotest#options = "--all --no-fail-fast"
 
 let g:ale_rust_cargo_use_check=1
+let g:ale_rust_cargo_check_tests=1
 
 " tags
 let g:tagbar_type_rust = {
@@ -25,3 +26,11 @@ let g:tagbar_type_rust = {
       \'i:impls,trait implementations',
   \]
   \}
+
+if executable('rls')
+  if !exists('g:ale_linters')
+    let g:ale_linters = {}
+  endif
+
+  let g:ale_linters.rust = ['rls']
+endif
