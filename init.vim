@@ -1,5 +1,9 @@
 set nocompatible
 
+" if filereadable(expand("$HOME/.vim/venv/bin/python3"))
+  " let g:python3_host_prog=expand("$HOME/.vim/venv/bin/python3")
+" endif
+
 runtime! Plug.vim
 
 runtime! config/editor.vim

@@ -35,12 +35,15 @@ set wildmenu
 set hidden " keep buffers open in the background
 set autoread " update the file in vim if it changes outside
 set noswapfile " grr
-set backupdir=/tmp,/var/tmp
+set backupdir=~/.vim/tmp/
+if !isdirectory(&backupdir)
+  call mkdir(&backupdir)
+endif
 set switchbuf=useopen
 set eol " ensure EOL gets added to non-binary files
 set splitright " open w windows to the right
 set foldmethod=syntax " fold based on language syntax
-set nofoldenable " start with folds closed
+set nofoldenable " start with folds open
 set diffopt+=vertical " prefer diffs to use vertical splits
 
 " Indentation
@@ -56,7 +59,7 @@ set matchtime=3
 
 " Keep vim quiet
 set noerrorbells
-set visualbell
+set novisualbell
 set t_vb=
 
 " Editor navigation
@@ -68,5 +71,8 @@ set history=1000
 set undolevels=100
 if has('persistent_undo')
   set undofile
-  set undodir=/tmp/vim-undo
+  set undodir=~/.vim/undo
+  if !isdirectory(&undodir)
+    call mkdir(&undodir)
+  endif
 endif

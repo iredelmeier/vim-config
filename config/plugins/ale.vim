@@ -8,3 +8,8 @@ if !exists('g:airline_extensions')
 endif
 
 let g:airline_extensions += ['ale']
+
+" For use with Language Server Protocol
+let g:ale_completion_enabled = 1
+
+let g:ale_fix_on_save = 1

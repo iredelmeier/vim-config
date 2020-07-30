@@ -62,6 +62,8 @@ Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
+" Multi-file search-and-replace
+Plug 'wincent/ferret'
 
 """"""""""
 """ Search
@@ -71,6 +73,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'tpope/vim-abolish'
 " Better search
 Plug 'mileszs/ack.vim'
+
+" grepper?
 
 """"""""""""""""
 """ Text Objects
@@ -94,11 +98,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 " Async commands
 Plug 'tpope/vim-dispatch'
-" Plug 'radenling/vim-dispatch-neovim'
+Plug 'radenling/vim-dispatch-neovim'
 " Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 " Test all the things
 Plug 'janko-m/vim-test'
+Plug 'mattn/webapi-vim'
 
 """""""""""""
 """ Languages
@@ -108,9 +113,9 @@ Plug 'janko-m/vim-test'
 " Plug 'sheerun/vim-polyglot'
 
 " Rust
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer', { 'for': 'rust' }
-Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
+" Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
 
 " Golang
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
@@ -122,3 +127,16 @@ Plug 'uarun/vim-protobuf', { 'for': 'proto' }
 " Ruby
 Plug 'tpope/vim-bundler', { 'for': ['ruby', 'rake'] }
 Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'] }
+
+" JavaScript
+Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
+Plug 'leafgarland/typescript-vim', { 'for': ['typescript'] }
+
+" Pug
+Plug 'digitaltoad/vim-pug', { 'for': ['pug'] }
+
+" Sass/SCSS
+Plug 'cakebaker/scss-syntax.vim'
+
+" Python
+Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['python'] }

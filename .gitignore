@@ -3,3 +3,5 @@ autoload/plug.vim.old
 .netrwhist
 vimrc.local
 vimrc.local.plugins
+tmp
+undo
