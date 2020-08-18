@@ -140,3 +140,6 @@ Plug 'cakebaker/scss-syntax.vim'
 
 " Python
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['python'] }
+
+" Elixir
+Plug 'elixir-editors/vim-elixir', { 'for': ['elixir'] }
