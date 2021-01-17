@@ -43,6 +43,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'terryma/vim-multiple-cursors'
 " Autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete-lsp'
 " Displays function signatures
 Plug 'Shougo/echodoc.vim'
 " Includes words within camelcase word
@@ -114,7 +115,7 @@ Plug 'mattn/webapi-vim'
 
 " Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'racer-rust/vim-racer', { 'for': 'rust' }
+" Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 " Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
 
 " Golang
@@ -126,7 +127,7 @@ Plug 'uarun/vim-protobuf', { 'for': 'proto' }
 
 " Ruby
 Plug 'tpope/vim-bundler', { 'for': ['ruby', 'rake'] }
-Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'] }
+Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'], 'branch': 'main' }
 
 " JavaScript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
@@ -143,3 +144,6 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['python'] }
 
 " Elixir
 Plug 'elixir-editors/vim-elixir', { 'for': ['elixir'] }
+
+" Terraform
+Plug 'hashivim/vim-terraform', { 'for': ['tf', 'hcl', 'json'] }

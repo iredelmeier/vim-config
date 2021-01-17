@@ -45,6 +45,7 @@ set splitright " open w windows to the right
 set foldmethod=syntax " fold based on language syntax
 set nofoldenable " start with folds open
 set diffopt+=vertical " prefer diffs to use vertical splits
+au FocusLost * silent! :wa " autosave files when focus is lost
 
 " Indentation
 filetype plugin indent on " Detect file types
