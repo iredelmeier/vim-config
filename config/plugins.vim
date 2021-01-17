@@ -42,8 +42,8 @@ Plug 'tpope/vim-unimpaired'
 " Multiple cursors
 Plug 'terryma/vim-multiple-cursors'
 " Autocomplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-lsp'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete-lsp'
 " Displays function signatures
 Plug 'Shougo/echodoc.vim'
 " Includes words within camelcase word
@@ -59,12 +59,13 @@ Plug 'tpope/vim-endwise'
 " Auto-align table text
 Plug 'godlygeek/tabular'
 " Language server awesomeness
-Plug 'autozimu/LanguageClient-neovim', {
-      \ 'branch': 'next',
-      \ 'do': 'bash install.sh',
-      \ }
+" Plug 'autozimu/LanguageClient-neovim', {
+      " \ 'branch': 'next',
+      " \ 'do': 'bash install.sh',
+      " \ }
 " Multi-file search-and-replace
 Plug 'wincent/ferret'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 """"""""""
 """ Search

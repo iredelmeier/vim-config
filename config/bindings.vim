@@ -49,15 +49,20 @@ nnoremap <leader>b :FZFBuffers<cr>
 nnoremap <leader>C :FZFColors<cr>
 
 " LanguageClient
-function LC_maps()
-  if has_key(g:LanguageClient_serverCommands, &filetype)
-    nnoremap <F9> :call LanguageClient_contextMenu()<CR>
+" function LC_maps()
+  " if has_key(g:LanguageClient_serverCommands, &filetype)
+    " nnoremap <F9> :call LanguageClient_contextMenu()<CR>
 
-    nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<CR>
-    nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
-    nnoremap <buffer> <silent> gr :call LanguageClient#textDocument_rename()<CR>
-    nnoremap <buffer> <silent> gu :call LanguageClient#textDocument_references()<CR>
-  endif
-endfunction
+    " nnoremap <buffer> <silent> K :call LanguageClient#textDocument_hover()<CR>
+    " nnoremap <buffer> <silent> gd :call LanguageClient#textDocument_definition()<CR>
+    " nnoremap <buffer> <silent> gr :call LanguageClient#textDocument_rename()<CR>
+    " nnoremap <buffer> <silent> gu :call LanguageClient#textDocument_references()<CR>
+  " endif
+" endfunction
 
-autocmd FileType * call LC_maps()
+" autocmd FileType * call LC_maps()
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

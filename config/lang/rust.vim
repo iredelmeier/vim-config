@@ -67,3 +67,9 @@ if !exists('g:test#runner_commands')
 endif
 
 let g:test#runner_commands += ['CargoTest']
+
+if !exists('g:coc_global_extensions')
+  let g:coc_global_extensions = []
+endif
+
+let g:coc_global_extensions += ['coc-rust-analyzer']
