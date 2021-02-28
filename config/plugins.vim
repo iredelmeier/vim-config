@@ -40,7 +40,7 @@ Plug 'ntpeters/vim-better-whitespace'
 " Pairs of mappings
 Plug 'tpope/vim-unimpaired'
 " Multiple cursors
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 " Autocomplete
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'Shougo/deoplete-lsp'
