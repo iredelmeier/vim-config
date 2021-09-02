@@ -10,3 +10,5 @@ endif
 for extension in ['branch', 'netrw', 'tabline', 'quickfix']
   let g:airline_extensions += [extension]
 endfor
+
+let g:airline_highlighting_cache = 1

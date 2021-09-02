@@ -41,11 +41,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-unimpaired'
 " Multiple cursors
 " Plug 'terryma/vim-multiple-cursors'
-" Autocomplete
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'Shougo/deoplete-lsp'
-" Displays function signatures
-Plug 'Shougo/echodoc.vim'
 " Includes words within camelcase word
 Plug 'bkad/CamelCaseMotion'
 " +/- to expand or shrink region
@@ -58,11 +53,6 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-endwise'
 " Auto-align table text
 Plug 'godlygeek/tabular'
-" Language server awesomeness
-" Plug 'autozimu/LanguageClient-neovim', {
-      " \ 'branch': 'next',
-      " \ 'do': 'bash install.sh',
-      " \ }
 " Multi-file search-and-replace
 Plug 'wincent/ferret'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -78,14 +68,6 @@ Plug 'mileszs/ack.vim'
 
 " grepper?
 
-""""""""""""""""
-""" Text Objects
-""""""""""""""""
-" Allows you to create custom text objects
-Plug 'kana/vim-textobj-user'
-" Helps select ruby blocks
-Plug 'nelstrom/vim-textobj-rubyblock'
-
 """""""""""""""
 """ Integration
 """""""""""""""
@@ -96,8 +78,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 " Shows diffs in side column
 Plug 'airblade/vim-gitgutter'
-" Async linting
-Plug 'w0rp/ale'
 " Async commands
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
@@ -105,19 +85,13 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'christoomey/vim-tmux-navigator'
 " Test all the things
 Plug 'janko-m/vim-test'
-Plug 'mattn/webapi-vim'
 
 """""""""""""
 """ Languages
 """""""""""""
 
-" Support for many languages
-" Plug 'sheerun/vim-polyglot'
-
 " Rust
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-" Plug 'racer-rust/vim-racer', { 'for': 'rust' }
-" Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
 
 " Golang
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
@@ -145,6 +119,7 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['python'] }
 
 " Elixir
 Plug 'elixir-editors/vim-elixir', { 'for': ['elixir'] }
+Plug 'elixir-lsp/coc-elixir', { 'do': 'yarn install && yarn prepack', 'for': ['elixir'] }
 
 " Terraform
 Plug 'hashivim/vim-terraform', { 'for': ['tf', 'hcl', 'json'] }
