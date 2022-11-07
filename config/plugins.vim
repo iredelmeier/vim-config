@@ -95,7 +95,6 @@ Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 " Golang
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
-Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 
 " Protobuf
 Plug 'uarun/vim-protobuf', { 'for': 'proto' }

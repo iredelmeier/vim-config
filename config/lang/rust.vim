@@ -1,4 +1,5 @@
-let g:rustfmt_autosave = 1
+" Use coc instead
+let g:rustfmt_autosave = 0
 
 let g:rust_fold = 1
 
