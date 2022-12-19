@@ -34,7 +34,7 @@ Plug 'tpope/vim-surround'
 " Better command repetition
 Plug 'tpope/vim-repeat'
 " Closes brackets
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 " Shows and removes extra whitespace
 Plug 'ntpeters/vim-better-whitespace'
 " Pairs of mappings
@@ -44,7 +44,7 @@ Plug 'tpope/vim-unimpaired'
 " Includes words within camelcase word
 Plug 'bkad/CamelCaseMotion'
 " +/- to expand or shrink region
-Plug 'terryma/vim-expand-region'
+" Plug 'terryma/vim-expand-region'
 " View tags
 Plug 'majutsushi/tagbar'
 " Undo tree
@@ -53,8 +53,7 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-endwise'
 " Auto-align table text
 Plug 'godlygeek/tabular'
-" Multi-file search-and-replace
-Plug 'wincent/ferret'
+" All the things!!!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 """"""""""
@@ -63,10 +62,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Update variants of a word
 Plug 'tpope/vim-abolish'
+" Multi-file search-and-replace
+Plug 'wincent/ferret'
 " Better search
 Plug 'mileszs/ack.vim'
-
-" grepper?
 
 """""""""""""""
 """ Integration
@@ -94,7 +93,7 @@ Plug 'janko-m/vim-test'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 " Golang
-Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
+" Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 
 " Protobuf
 Plug 'uarun/vim-protobuf', { 'for': 'proto' }

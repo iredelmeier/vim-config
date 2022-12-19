@@ -11,11 +11,13 @@ set termencoding=utf-8
 set ruler
 set number " line numbers
 set numberwidth=4
+set signcolumn=yes " So that the columns stay consist with and without diagnostics
 set wrap " wrap long lines
 set linebreak " wrap at the end of words, not in the middle
 set scrolloff=2 " keep some context visible
 set iskeyword+=$,@ " characters that can be part of variable names
 set tildeop " Enables ~<motion> to toggle case
+set updatetime=400
 " don't automatically add comments on enter
 autocmd FileType * setlocal formatoptions-=c formatoptions -=r formatoptions -=o
 

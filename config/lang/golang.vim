@@ -13,3 +13,9 @@ let g:go_fmt_fail_silently = 1
 
 let test#go#ginkgo#options = '-race -p -randomizeAllSpecs -randomizeSuites'
 let test#go#gotest#options = '-race'
+
+if !exists('g:coc_global_extensions')
+  let g:coc_global_extensions = []
+endif
+
+let g:coc_global_extensions += ['coc-go']
