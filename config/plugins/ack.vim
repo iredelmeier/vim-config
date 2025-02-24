@@ -1,3 +1,3 @@
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep -f'
+  let g:ackprg = 'rg --vimgrep'
 endif

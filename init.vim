@@ -13,6 +13,8 @@ runtime! config/colors.vim
 runtime! config/bindings.vim
 
 runtime! config/plugins/*.vim
+" This should be cleaner but ehhhh
+" lua require"config/plugins/nvim-dap"
 runtime! config/lang/*.vim
 
 if filereadable(expand("$HOME/.vimrc.local"))

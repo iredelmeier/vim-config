@@ -1,3 +1,10 @@
 {
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "tsserver.log": "verbose",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onSave",
+  "eslint.experimental.useFlatConfig": true,
+  "snippets.ultisnips.pythonPrompt": false,
+  "svelte.enable-ts-plugin": true
 }

@@ -39,10 +39,12 @@ nnoremap <C-p> :FZFFiles<cr>
 nnoremap <leader>f :FZFFiles<cr>
 nnoremap <leader>m :FZFHistory<cr>
 nnoremap <leader>F :FZFBTags<cr>
-nnoremap <leader>S :FZFTags<cr>
+nnoremap <leader>T :FZFTags<cr>
 nnoremap <leader>L :FZFBLines<cr>
 nnoremap <leader>b :FZFBuffers<cr>
 nnoremap <leader>C :FZFColors<cr>
+nnoremap <leader>s :FZFRg<cr>
+nnoremap <leader>S :FZFRG<cr>
 
 " LanguageClient
 " function LC_maps()
@@ -83,9 +85,12 @@ endfunction
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) :
+      \ "\<C-h>"
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice.
@@ -96,6 +101,9 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph

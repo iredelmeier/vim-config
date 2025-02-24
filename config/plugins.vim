@@ -76,7 +76,7 @@ Plug 'tpope/vim-eunuch'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 " Shows diffs in side column
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'branch': 'main' }
 " Async commands
 Plug 'tpope/vim-dispatch'
 Plug 'radenling/vim-dispatch-neovim'
@@ -84,6 +84,8 @@ Plug 'radenling/vim-dispatch-neovim'
 Plug 'christoomey/vim-tmux-navigator'
 " Test all the things
 Plug 'janko-m/vim-test'
+" Debugger via the Debug Adapter Protocol (DAP)
+Plug 'mfussenegger/nvim-dap'
 
 """""""""""""
 """ Languages
@@ -105,15 +107,22 @@ Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'rake'], 'branch': 'main' 
 " JavaScript
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript'] }
+Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescriptreact'] }
+Plug 'othree/html5.vim'
+Plug 'evanleck/vim-svelte', { 'branch': 'main', 'for': ['svelte'] }
 
 " Pug
 Plug 'digitaltoad/vim-pug', { 'for': ['pug'] }
+
+" Jinja2 and Tera
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': ['html'] }
 
 " Sass/SCSS
 Plug 'cakebaker/scss-syntax.vim'
 
 " Python
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['python'] }
+Plug 'mfussenegger/nvim-dap-python' " for debugging
 
 " Elixir
 Plug 'elixir-editors/vim-elixir', { 'for': ['elixir'] }
@@ -121,3 +130,6 @@ Plug 'elixir-lsp/coc-elixir', { 'do': 'yarn install && yarn prepack', 'for': ['e
 
 " Terraform
 Plug 'hashivim/vim-terraform', { 'for': ['tf', 'hcl', 'json'] }
+
+" OpenSCAD
+Plug 'salkin-mada/openscad.nvim', { 'for': 'scad' }
